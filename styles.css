@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+
+.navbar1 {
+    background-color: #032848;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-top: 1rem;
+    width: 50%;
+    height: 70%;
+    margin-left: 3rem;
+}
+
+
+.main-heading {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.main-heading h3 {
+    margin-left: 2rem;
+    font-size: 2.1rem;
+    text-transform: capitalize;
+}
+
+.main-heading h4 {
+    font-size: 1.2rem;
+}
+
+/* section main heading ends here  */
+.navbar {
+    background-color: #004079;
+    border-bottom: .3rem solid rgb(92, 90, 90);
+    text-align: center;
+}
+
+.navbar a {
+    margin: 2rem 2rem;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+
+/* navbar section ends here  */
+
+.news-flash {
+    background-color: #020c44;
+    text-align: center;
+    position: relative;
+}
+
+.flash-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.flash-container div {
+    width: 100%;
+    height: 10vh;
+    background-color: #020c44;
+    position: absolute;
+    transform: scale(0);
+    transition: scale .2s;
+}
+
+.flash-container div.change {
+    transform: scale(1);
+}
+
+.news-flash p {
+    font-size: 1.1rem;
+    display: inline-block;
+    color: #b4b913;
+}
+
+.news-flash span {
+    color: #ebb038;
+    font-size: 1.4rem;
+}
+
+/* section for slideshow begins here  */
+.section-slide {
+    width: 100%;
+    height: 100vh;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.slide-container .slide {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slide img {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    transform: scale(0);
+
+}
+
+img.change {
+    transform: scale(1);
+}
+
+/* slideshow section ends here  */
+
+/* welcome section begins here  */
+.welcome-section {
+    width: 100%;
+    height: 30vh;
+}
+
+.welcome-school {
+    text-align: center;
+}
+
+.welcome-heading {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #004079;
+    font-weight: bold;
+}
+
+.welcome-school p {
+    padding: 2rem;
+}
+
+/* management section begins here  */
+.management-section {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #808283;
+    /* border: 1px solid #004079; */
+}
+
+.management {
+    margin: 5% 0 2.2% 0;
+    text-align: center;
+    color: #004079;
+}
+
+.management-heading {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding-top: 2rem;
+}
+
+.management-slide {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 10vh;
+    z-index: 10;
+    position: absolute;
+    transform: scale(0);
+    transition: scale .2s ease-in-out;
+}
+
+.management-slide.change {
+    transform: scale(1);
+}
+
+
+.management-part img {
+    width: 100%;
+    height: 70vh;
+    padding: 5rem;
+    display: inline-block;
+}
+
+.name-details {
+    padding: 10% 10% 0 8%;
+}
+
+.name-details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004079;
+    margin-top: 2%;
+}
+
+.name-details h5 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #04505c;
+    margin-top: 2%;
+}
+
+.name-details p {
+    margin-top: 2%;
+}
+
+.submit-btn {
+    margin-top: 7%;
+    padding: 1.7%;
+    color: #004079;
+    background-color: white;
+    border: 1px solid #004079;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(.6rem);
+    }
+}
+
+
+/* section for details grid  */
+.details-section {
+    position: relative;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 7%;
+}
+
+.grid-curriculum {
+    background: url(./images/images/curriculum2.jpg);
+}
+.grid-classroom{
+    background: url(./images/images/classroom.jpg);
+}
+.grid-library{
+    background:url(./images/images/library.jpg);
+}
+.grid-classroom {
+    background-color: rgba(1, 81, 131, 0.8);
+}
+
+.grid-curriculum,
+.grid-classroom,
+.grid-library {
+    padding: 1rem 1rem 1rem 2rem;
+    z-index: 10;
+}
+
+.grid-curriculum h1,
+.grid-classroom h1,
+.grid-library h1 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: white;
+    transition: all 3s;
+}
+.grid-curriculum:hover {
+    background:url(./images/images/library.jpg)
+}
+
+.grid-library:hover {
+    background:url(./images/images/curriculum2.jpg)
+}
+
+.grid-curriculum p,
+.grid-classroom p,
+.grid-library p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.details1 {
+    padding: 10%;
+
+    background-color: #004079;
+}
+
+.submit-btn2 {
+    margin-top: 7%;
+    padding: 2.2%;
+    color: #004079;
+    background-color: white;
+    border: 1px solid #004079;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* section for achievements */
+
+/* scroll btn section  */
+.scroll-btn {
+    position: fixed;
+    right: 5rem;
+    background: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #077889;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    border-radius: 100%;
+    box-shadow: 0 0.1rem 0.3rem #4b4b4b;
+}

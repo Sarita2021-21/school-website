@@ -1,0 +1,31 @@
+<div class="details-grid">
+            <div class="details1">
+                <h2 class="details-heading">
+                    Curriculum
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga delectus voluptates voluptatibus
+                    impedit ad repellat ipsam minus repellendus quod.</p>
+                <button class="submit-btn2"><a href="#home"> Read more <i
+                            class="fa-solid fa-arrow-right arrow"></i></a></button>
+            </div>
+            <div class="details2">
+                <img src="./images/management/happy-model-senior-secondary-school-gurgaon-76364257.jpg" alt=""
+                    class="bg-details">
+                <h2 class="details-heading">
+                    Digital classroom
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga delectus voluptates voluptatibus
+                    impedit ad repellat ipsam minus repellendus quod.</p>
+                <button class="submit-btn2"><a href="#home"> Read more <i
+                            class="fa-solid fa-arrow-right arrow"></i></a></button>
+            </div>
+
+            <div class="details3">
+                <h2 class="details-heading">
+                    library
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga delectus voluptates voluptatibus
+                    impedit ad repellat ipsam minus repellendus quod.</p>
+                <button class="submit-btn2"><a href="#home"> Read more <i
+                            class="fa-solid fa-arrow-right arrow"></i></a></button>
+            </div>
